@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    About Page
-  </h1>
+<body class="h-screen flex justify-center flex-col">
+  <div class="flex flex-col h-1 w-full bg-black fixed top-0" ></div>
+  <div class="flex justify-center lg:justify-between mx-32 mt-4 sm:mt-8 pb-2">
+    <h2 class="font-light text-2xl">PAGEMAKR</h2>
+    <nav class="hidden lg:block">
+      <a href="#home" class="font-serif ml-8 font-bold">Home</a>
+      <a href="#grid" class="font-serif ml-8 hover:text-zinc-500">Grid</a>
+      <a href="#contact" class="font-serif ml-8 hover:text-zinc-500">Contact</a>
+    </nav>
+  </div>
+  <div class="flex justify-center">
+    <h1 class="font-serif text-black text-3xl font-lighter py-2">About Us</h1>
+  </div>
+  <p class="font-serif mx-8">Boilerplate text, or simply boilerplate, is any written text (copy) that can be reused in new contexts or applications without significant changes to the original. The term is used in reference to statements, contracts and computer code, and is used in the media to refer to hackneyed or unoriginal writing.</p>
+  <div class="flex flex-col items-center justify-center">
+    <img src="https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="picture of thing" class="object-cover w-75 h-80 lg:w-[70rem] lg:h-[20rem] m-8 rounded-md">
+    <button class="font-serif font-light  border-2 border-black h-10 w-48 hover:text-gray-500 hover:border-gray-500">Get in Touch</button>
+  </div>
 </body>
 </html>
