@@ -4,25 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body class="h-screen flex justify-center flex-col">
-  <div class="flex flex-col h-1 w-full bg-black fixed top-0" ></div>
-  <div class="flex justify-center lg:justify-between mx-32 mt-4 sm:mt-8 pb-2">
-    <h2 class="font-light text-gray-900 text-2xl mt-12 lg:mt-0">PAGEMAKR</h2>
-    <nav class="hidden lg:block">
-      <a href="#home" class=" text-gray-900 ml-8 font-bold">Home</a>
-      <a href="#grid" class="ml-8 text-zinc-500 hover:text-blue-900">Grid</a>
-      <a href="#contact" class="ml-8 text-zinc-500 hover:text-blue-900">Contact</a>
-    </nav>
-  </div>
-  <div class="flex flex-col justify-center items-center">
-    <h1 class=" text-gray-900 text-3xl font-lighter py-2">About Us</h1>
-    <span class="w-[10%] lg:w-[5%] h-0.5 bg-gray-900 origin-left mb-4"></span>
-  </div>
-  <p class="mx-16">Boilerplate text, or simply boilerplate, is any written text (copy) that can be reused in new contexts or applications without significant changes to the original. The term is used in reference to statements, contracts and computer code, and is used in the media to refer to hackneyed or unoriginal writing.</p>
-  <div class="flex flex-col items-center justify-center">
-    <img src="https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="picture of thing" class="object-cover w-[75%] h-85 lg:h-[20rem] m-8 rounded-md">
-    <button class="font-light rounded border-2 border-gray-800 bg-gray-800 text-white h-10 w-48 hover:bg-gray-900 hover:border-gray-900 mb-8">Get in Touch</button>
-  </div>
+<body class="overflow-y-auto flex flex-col">
+    <section class="flex justify-center lg:justify-between mx-32 mt-4 sm:mt-8">
+        <h2 class="font-light text-gray-900 text-2xl mt-12 lg:mt-0">PAGEMAKR</h2>
+        <nav class="hidden lg:block">
+          <a href="#home" class=" text-gray-900 ml-8 font-bold">Home</a>
+          <a href="#grid" class="ml-8 text-zinc-500 hover:text-blue-900">Grid</a>
+          <a href="#contact" class="ml-8 text-zinc-500 hover:text-blue-900">Contact</a>
+        </nav>
+    </section>
+    <section class="bg-white">
+        <div class="gap-16 items-center py-8 px-2 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-600">
+                <h2 class="mb-4 text-4xl font-extrabold text-gray-900">About Us</h2>
+                <p class="mb-4"> Aut provident odit sit maxime deleniti ea molestiae molestiae
+                    Aut provident odit sit maxime deleniti ea molestiae molestiae
+                    Aut provident odit sit maxime deleniti ea molestiae molestiae
+                </p>
+                <button class="font-light rounded border-2 border-gray-800 bg-gray-800 text-gray-300 h-10 w-48 hover:text-gray-100 mb-8">Get in Touch</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+            </div>
+        </div>
+    </section>  
 </body>
 </html>

@@ -4,25 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body class="h-screen flex justify-center flex-col">
-  <div class="flex flex-col h-1 w-full bg-black fixed top-0" ></div>
-  <div class="flex justify-center lg:justify-between mx-32 mt-4 sm:mt-8 pb-2">
-    <h2 class="font-light text-2xl">PAGEMAKR</h2>
-    <nav class="hidden lg:block">
-      <a href="#home" class="font-serif ml-8 font-bold">Home</a>
-      <a href="#grid" class="font-serif ml-8 hover:text-zinc-500">Grid</a>
-      <a href="#contact" class="font-serif ml-8 hover:text-zinc-500">Contact</a>
-    </nav>
+<body class="overflow-y-auto h-screen flex justify-center flex-col">
+  <div class="md:h-[45%] bg-gray-900 flex flex-col">
+    <div class="flex justify-center lg:justify-between md:mx-32 mt-4 sm:mt-8 pb-2">
+        <h2 class="font-light text-gray-300  text-2xl mt-12 lg:mt-0">PAGEMAKR</h2>
+        <nav class="hidden lg:block">
+          <a href="#home" class=" text-gray-300 ml-8">Home</a>
+          <a href="#grid" class="ml-8 text-blue-300 font-light hover:text-blue-200">Grid</a>
+          <a href="#contact" class="ml-8 text-blue-300 font-light hover:text-blue-200">Contact</a>
+        </nav>
+      </div>
+      <div class="flex justify-start mx-24 my-7">
+        <div class="flex w-[60%] flex-col">
+            <h1 class="md:text-5xl text-3xl font-semibold text-blue-300 mb-3">About Us</h1>
+            <span class="w-[10%] lg:w-[25%] h-0.5 bg-blue-300 origin-left mb-4 md:ml-4"></span>
+            <p class="font-extralight text-gray-300"> Aut provident odit sit maxime deleniti ea molestiae molestiae  Aut provident odit sit maxime deleniti ea molestiae molestiae</p>
+        </div>
+        <div class="flex w-[40%] justify-center items-end">
+        </div>
+      </div>
   </div>
-  <div class="flex justify-center">
-    <h1 class="font-serif text-black text-3xl font-lighter py-2">About Us</h1>
-    <span class="w-[50%] h-0.5 bg-gray-900 origin-left"></span>
-  </div>
-  <p class="font-serif mx-8">Boilerplate text, or simply boilerplate, is any written text (copy) that can be reused in new contexts or applications without significant changes to the original. The term is used in reference to statements, contracts and computer code, and is used in the media to refer to hackneyed or unoriginal writing.</p>
-  <div class="flex flex-col items-center justify-center">
-    <img src="https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="picture of thing" class="object-cover w-75 h-80 lg:w-[70rem] lg:h-[20rem] m-8 rounded-md">
-    <button class="font-serif font-light  border-2 border-black h-10 w-48 hover:text-gray-500 hover:border-gray-500 mb-8">Get in Touch</button>
+  <div class="md:h-[55%] flex justify-center items-center md:flex-row flex-col">
+    <div class ="md:w-[50%] w-[100%] justify-center items-center md:mt-8">
+        <h1 class="text-gray-900 text-4xl mx-24 my-4">What We Do</h1>
+        <p class=" font-light mx-24">Boilerplate text, or simply boilerplate, is any written text (copy) that can be reused in new contexts or applications without significant changes to the original. Boilerplate text, or simply boilerplate, is any written text (copy) that can be reused in new contexts or applications without significant changes to the original.</p>
+    </div>
+    <div class ="md:w-[50%] w-[100%] flex flex-col justify-center items-center my-12">
+        <h1 class="text-gray-900 text-2xl">For questions & inquiries : </h1>
+        <button class="font-light rounded-md border-2 border-gray-800 bg-gray-800 text-gray-200 h-10 w-48 hover:text-blue-300 mt-6">Get in Touch</button>
+    </div>
   </div>
 </body>
 </html>
