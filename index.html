@@ -4,6 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Hero
+    const companyName = "PAGEMAKR";
+    const heroImageURL = "https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80";
+
+    // About
+    const aboutDesc = "Aut provident odit sit maxime deleniti ea molestiae molestiae Aut provident odit sit maxime deleniti ea molestiae molestiae Aut provident odit sit maxime deleniti ea molestiae molestiae";
+    const aboutImg1URL = "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png";
+    const aboutImg2URL = "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png";
+
+    // Grid
+    const gridTitle = "Grid";
+    const gridCard1Title = "Card #1";
+    const gridCard1Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+    const gridCard2Title = "Card #2";
+    const gridCard2Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+    const gridCard3Title = "Card #3";
+    const gridCard3Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+    const gridCard4Title = "Card #4";
+    const gridCard4Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+    const gridCard5Title = "Card #5";
+    const gridCard5Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+    const gridCard6Title = "Card #6";
+    const gridCard6Body = "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.";
+
+    // Contact
+    const email = "buisiness@gmail.com";
+    const phoneNumber = "(123) 456 7890";
+    const address = "1234 Sesame St. A1B 2C3";
+  </script>
 </head>
 <body>
     <div class="h-1 w-full bg-black fixed top-0" ></div>
@@ -11,65 +41,125 @@
     <!-- Hero -->
     <section class="h-screen bg-gray-50">
         <div class="flex justify-center md:justify-between px-32 py-8">
-        <h2 class="font-semibold text-2xl">PAGEMAKR</h2>
+        <h2 id="companyName" class="font-semibold text-2xl"></h2>
         <nav class="hidden md:block">
             <a href="#about" class="font-serif ml-8">About</a>
-            <a href="#grid" class="font-serif ml-8">Grid</a>
+            <a id="gridTitle" href="#grid" class="font-serif ml-8"></a>
             <a href="#contact" class="font-serif ml-8">Contact</a>
         </nav>
         </div>
         <div class="h-4/5 flex justify-center items-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="picture of thing" class="rounded-full min-w-[27em] max-w-[27rem] min-h-[27rem] max-h-[27rem] 2xl:min-w-[45rem] 2xl:min-h-[45rem]">
+        <img id="heroImageURL" src="https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="picture of thing" class="rounded-full min-w-[27em] max-w-[27rem] min-h-[27rem] max-h-[27rem] 2xl:min-w-[45rem] 2xl:min-h-[45rem]">
         </div>
     </section>
 
     <!-- About Us-->
     <section class="h-screen bg-white flex items-center">
-        <div class="gap-16 items-center py-8 px-2 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div class="gap-16 items-center py-8 px-2 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-600">
             <h2 class="mb-4 text-4xl font-extrabold text-gray-900">About Us</h2>
-            <p class="mb-4"> Aut provident odit sit maxime deleniti ea molestiae molestiae
-                Aut provident odit sit maxime deleniti ea molestiae molestiae
-                Aut provident odit sit maxime deleniti ea molestiae molestiae
-            </p>
+            <p id="aboutDesc" class="mb-4"></p>
             <button class="font-light rounded border-2 border-gray-800 bg-gray-800 text-gray-300 h-10 w-48 hover:text-gray-100 mb-8">Get in Touch</button>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
+            <img id="aboutImg1URL" class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
+            <img id="aboutImg2URL" class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
         </div>
-        </div>
+      </div>
     </section>  
 
     <!-- Grid -->
     <section class="h-screen bg-gray-50">
-        <h1 class="text-center text-gray-800 text-3xl md:text-4xl font-bold py-16 lg:py-32">Grid Component</h1>
+        <h1 id="gridTitle" class="text-center text-gray-800 text-3xl md:text-4xl font-bold py-16 lg:py-32"></h1>
         <div class="flex flex-wrap justify-center gap-2 md:gap-4 2xl:mx-36">
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard1Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard1Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard2Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard2Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard3Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard3Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard4Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard4Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard5Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard5Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
           <div class="w-96 m-4 p-4 max-w-sm rounded-lg border shadow-lg bg-gray-800 border-gray-700">
-            <h5 class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'>CARD #1</h5>
-            <p class="mb-3 text-sm lg:text-base font-normal text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <h5 id="gridCard6Title" class='mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-100'></h5>
+            <p id="gridCard6Body" class="mb-3 text-sm lg:text-base font-normal text-gray-400"></p>
           </div>
         </div>
     </section>
+
+    <!-- Contact -->
+    <section class="flex justify-center items-center">
+      <div class="w-96 m-4 p-4 max-w-sm border shadow-lg bg-gray-100 border-gray-200">
+        <div class="flex justify-between">
+          <h5 id="email" class='mb-2 text-md lg:text-lg font-normal tracking-tight text-black'></h5>
+          <h5 id="phoneNumber" class='mb-2 text-md lg:text-lg font-normal tracking-tight text-black'></h5>
+        </div>
+        <div class="flex justify-center py-3">
+          <h1 id="companyName" class="mb-3 text-xl lg:text-3xl font-bold text-black"></h1>
+        </div>
+        <h5 id="address" class='mb-2 text-md lg:text-lg font-normal tracking-tight text-gray-800'></h5>
+      </div>
+    </section>
+
+    <script>
+      const companyNameIDs = document.querySelectorAll("#companyName");
+      companyNameIDs.forEach((companyNameID) => {
+        companyNameID.innerHTML = companyName;
+      })
+      const heroImageURLID = document.getElementById("heroImageURL");
+      heroImageURLID.img = heroImageURL;
+      const aboutDescID = document.getElementById("aboutDesc");
+      aboutDescID.innerHTML = aboutDesc;
+      const aboutImg1URLID = document.getElementById("aboutImg1URL");
+      aboutImg1URLID.img = aboutImg1URL;
+      const aboutImg2URLID = document.getElementById("aboutImg2URL");
+      aboutImg2URLID.img = aboutImg2URL;
+      const gridTitleIDs = document.querySelectorAll("#gridTitle");
+      gridTitleIDs.forEach((gridTitleID) => {
+        gridTitleID.innerHTML = gridTitle;
+      })
+      const gridCard1TitleID = document.getElementById("gridCard1Title");
+      gridCard1TitleID.innerHTML = gridCard1Title;
+      const gridCard1BodyID = document.getElementById("gridCard1Body");
+      gridCard1BodyID.innerHTML = gridCard1Body;
+      const gridCard2TitleID = document.getElementById("gridCard2Title");
+      gridCard2TitleID.innerHTML = gridCard2Title;
+      const gridCard2BodyID = document.getElementById("gridCard2Body");
+      gridCard2BodyID.innerHTML = gridCard2Body;
+      const gridCard3TitleID = document.getElementById("gridCard3Title");
+      gridCard3TitleID.innerHTML = gridCard3Title;
+      const gridCard3BodyID = document.getElementById("gridCard3Body");
+      gridCard3BodyID.innerHTML = gridCard3Body;
+      const gridCard4TitleID = document.getElementById("gridCard4Title");
+      gridCard4TitleID.innerHTML = gridCard4Title;
+      const gridCard4BodyID = document.getElementById("gridCard4Body");
+      gridCard4BodyID.innerHTML = gridCard4Body;
+      const gridCard5TitleID = document.getElementById("gridCard5Title");
+      gridCard5TitleID.innerHTML = gridCard5Title;
+      const gridCard5BodyID = document.getElementById("gridCard5Body");
+      gridCard5BodyID.innerHTML = gridCard5Body;
+      const gridCard6TitleID = document.getElementById("gridCard6Title");
+      gridCard6TitleID.innerHTML = gridCard6Title;
+      const gridCard6BodyID = document.getElementById("gridCard6Body");
+      gridCard6BodyID.innerHTML = gridCard6Body;
+      const emailID = document.getElementById("email");
+      emailID.innerHTML = email;
+      const phoneNumberID = document.getElementById("phoneNumber");
+      phoneNumberID.innerHTML = phoneNumber;
+      const addressID = document.getElementById("address");
+      addressID.innerHTML = address;
+    </script>
 </body>
 </html>
